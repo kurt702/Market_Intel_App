@@ -1,0 +1,5 @@
+maps/zip_boundaries.geojson
+maps/us_zcta_500k.zip
+outputs/
+__pycache__/
+*.pyc
