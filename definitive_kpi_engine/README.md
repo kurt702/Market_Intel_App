@@ -1,48 +1,87 @@
 # Definitive KPI Engine
 
-Phase 1-7 scaffold for an auditable KPI engine for Definitive Healthcare CSV files.
+P# Market Intelligence App
 
-This repository is intentionally not feature-complete yet. Phase 1 establishes the project structure, configuration templates, placeholder package modules, placeholder tests, and a runnable command-line entrypoint.
+A governed analytics engine for transforming Definitive Healthcare CSV exports into auditable account intelligence for cardiovascular, EP, and Lead Management strategy.
 
-## Scope
+## Core Workflow
 
-Planned outputs:
+CSV Package
+   ↓
+Auditor Workbook
+   ↓
+KPI Workbook
+   ↓
+Deck / Map / PNG Outputs
 
-- Auditor Workbook
-- KPI Workbook
-- KPI Summary CSV
-- KPI Summary JSON
+The engine is built around one principle:
 
-Out of scope:
 
-- PowerPoint automation
-- Slide deck generation
-- Recommendations
-- Opportunity scores
-- Strategy narratives
+Project Structure
+Market_Intel_App/
+│
+├── definitive_engine/        # Core audit + KPI engine
+│   ├── intake/               # CSV loading and file scanning
+│   ├── classification/       # File type detection by schema
+│   ├── cleaning/             # Numeric cleanup and normalization
+│   ├── auditor_workbook/     # Auditor Workbook generation
+│   ├── validation/           # Quality checks and eligibility logic
+│   ├── taxonomies/           # CPT / DRG mapping logic
+│   └── metrics/              # KPI calculations
+│
+├── config/                   # Metric definitions and code crosswalks
+├── accounts/                 # Account-specific input/output folders
+├── visualizations/           # Heat maps, leakage maps, PNGs
+├── deck_builder/             # Future PowerPoint output
+├── archive_legacy/           # Old one-off scripts
+└── outputs/                  # Shared exported workbooks/images
+Main Outputs
+1. Auditor Workbook
 
-## Setup
+The source-of-truth workbook.
 
-```powershell
-cd "C:\Users\gries\OneDrive\Desktop\AI Workflows\Market_Intel_App\definitive_kpi_engine"
-pip install -r requirements.txt
-```
+It captures:
 
-## Run CLI Scaffold
+Uploaded file inventory
+File classification
+Raw cleaned source tabs
+Traceability columns
+Data quality issues
+KPI eligibility checks
+Validation log
 
-```powershell
-python run_account.py --input-folder "C:\path\to\csvs" --output-folder "C:\path\to\outputs" --account-name "Example Account"
-```
+The Auditor Workbook does not create recommendations.
 
-The Phase 1 CLI only prints the arguments it receives.
+2. KPI Workbook
 
-## Project Layout
+The validated metric workbook.
 
-- `config/`: template CSV configuration files
-- `definitive_engine/`: placeholder Python package modules
-- `tests/`: placeholder test files
-- `run_account.py`: runnable CLI scaffold
+It calculates:
 
-## Next Phase
+Total EP Charges
+Device Implant Revenue
+Device Implant Volume
+Device Creation Revenue
+Device Lifecycle Revenue
+Lead Management Revenue
+EP Leakage Revenue
+Net Referral Balance
+Geographic Catchment
+EP Market Share
+Market Rank
+Device Population Creation Index
 
-Phase 2 should implement CSV discovery and column-signature file classification, then populate `Source_File_Inventory`.
+Each KPI must include a source, calculation rule, validation rule, and confidence rating.
+
+3. Deck Outputs
+
+Downstream outputs for maps, PNGs, and slides. These should read from the KPI Workbook or validated JSON exports, not raw CSVs.
+
+Governance Rules
+The Auditor Workbook is the single source of truth.
+Raw CSV data is preserved before calculations.
+Every KPI must be traceable to source data.
+Every KPI receives a confidence rating.
+Do not estimate missing or suppressed values.
+Do not mix CPT, DRG, leakage, or market-share data without clear labeling.
+Visuals and slides are downstream of validated metrics.
