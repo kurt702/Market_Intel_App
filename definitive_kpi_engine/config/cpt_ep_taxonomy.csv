@@ -1,0 +1,20 @@
+cpt_hcpcs_code,ep_category,kpi_domain,include_in_total_ep_charges,include_in_dpci,notes
+33206,Device Creation,Device Creation,TRUE,TRUE,Insertion of new or replacement pacemaker with atrial lead
+33207,Device Creation,Device Creation,TRUE,TRUE,Insertion of new or replacement pacemaker with ventricular lead
+33208,Device Creation,Device Creation,TRUE,TRUE,Insertion of new or replacement pacemaker with atrial and ventricular leads
+33225,Device Creation,Device Creation,TRUE,TRUE,LV lead insertion for CRT system creation or upgrade
+33249,Device Creation,Device Creation,TRUE,TRUE,ICD system insertion with leads
+33215,Device Lifecycle,Device Lifecycle,TRUE,TRUE,Repositioning of previously implanted transvenous pacemaker or ICD lead
+33216,Device Lifecycle,Device Lifecycle,TRUE,TRUE,Insertion of single transvenous electrode
+33217,Device Lifecycle,Device Lifecycle,TRUE,TRUE,Insertion of two transvenous electrodes
+33227,Device Lifecycle,Device Lifecycle,TRUE,TRUE,Pacemaker generator replacement single lead system
+33228,Device Lifecycle,Device Lifecycle,TRUE,TRUE,Pacemaker generator replacement dual lead system
+33229,Device Lifecycle,Device Lifecycle,TRUE,TRUE,Pacemaker generator replacement multiple lead system
+33262,Device Lifecycle,Device Lifecycle,TRUE,TRUE,ICD generator replacement single lead system
+33263,Device Lifecycle,Device Lifecycle,TRUE,TRUE,ICD generator replacement dual lead system
+33264,Device Lifecycle,Device Lifecycle,TRUE,TRUE,ICD generator replacement multiple lead system
+33234,Lead Management,Lead Management,TRUE,FALSE,Removal of transvenous pacemaker electrode single lead system
+33235,Lead Management,Lead Management,TRUE,FALSE,Removal of transvenous pacemaker electrode dual lead system
+33241,Lead Management,Lead Management,TRUE,FALSE,Removal of implantable defibrillator pulse generator only
+33243,Lead Management,Lead Management,TRUE,FALSE,Removal of single or dual chamber ICD electrode
+33244,Lead Management,Lead Management,TRUE,FALSE,Removal of single or dual chamber ICD electrode by transvenous extraction

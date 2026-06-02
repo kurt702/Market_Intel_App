@@ -1,0 +1,128 @@
+Definitive ID,Hospital name,City,State,Medicare pmts,Medicare charges,# of referrals,% of referrals,# of unique beneficiaries,Network name,In-network referrals
+1161,Rush Oak Park Hospital,Oak Park,IL,"$4,613,095","$12,961,063",119,8.3%,105,Rush University System for Health (AKA RUSH),Yes
+1198,Rush Copley Medical Center (AKA Copley Memorial Hospital),Aurora,IL,"$2,608,608","$7,689,448",61,4.3%,51,Rush University System for Health (AKA RUSH),Yes
+1176,Edward Hospital (FKA Edward Heart Hospital),Naperville,IL,"$1,503,163","$5,845,433",50,3.5%,46,Endeavor Health (FKA NorthShore - Edward-Elmhurst Health),No
+1149,Rush University Medical Center,Chicago,IL,"$1,485,725","$5,138,126",93,6.5%,84,Rush University System for Health (AKA RUSH),Yes
+1173,Advocate Good Samaritan Hospital,Downers Grove,IL,"$1,320,618","$4,561,269",35,2.4%,31,Advocate Health Care,No
+1277,Silver Cross Hospital,New Lenox,IL,"$1,269,814","$4,010,717",35,2.4%,31,,No
+1340,Community Hospital,Munster,IN,"$1,218,316","$3,848,041",30,2.1%,29,Powers Health (FKA Community Healthcare System),No
+1123,Saint Mary of Nazareth Hospital (FKA Ascension St Mary Chicago - Saint Mary Campus),Chicago,IL,"$1,098,375","$2,588,228",33,2.3%,24,Prime Healthcare Services,No
+1347,Northwest Health - La Porte (FKA La Porte Hospital),La Porte,IN,"$1,046,189","$3,714,832",,,,Northwest Health Porter (FKA Porter Health Care System),No
+1142,University of Illinois Hospital,Chicago,IL,"$1,031,142","$2,530,578",47,3.3%,36,University of Illinois Hospital & Health Sciences System (AKA UI Health),No
+1175,Northwestern Medicine Central DuPage Hospital,Winfield,IL,"$977,018","$3,356,489",24,1.7%,20,Northwestern Medicine (AKA Northwestern Memorial Healthcare),No
+1118,UChicago Medicine Ingalls Memorial Hospital,Harvey,IL,"$952,101","$2,479,135",18,1.3%,18,UChicago Medicine (FKA University of Chicago Medicine),No
+1195,Mercy Medical Center (FKA Ascension Mercy),Aurora,IL,"$950,271","$4,248,156",54,3.8%,48,Prime Healthcare Services,No
+1127,Advocate Christ Medical Center,Oak Lawn,IL,"$883,540","$2,111,722",29,2.0%,26,Advocate Health Care,No
+1160,Northwestern Medicine Palos Hospital (AKA Palos Health),Palos Heights,IL,"$841,148","$1,934,384",32,2.2%,19,Northwestern Medicine (AKA Northwestern Memorial Healthcare),No
+1168,Uchicago Medicine Mitchell Hospital - Hyde Park (AKA Bernard A Mitchell Hospital),Chicago,IL,"$805,027","$2,633,449",27,1.9%,25,UChicago Medicine (FKA University of Chicago Medicine),No
+1157,West Suburban Medical Center,Oak Park,IL,"$785,703","$2,739,091",27,1.9%,23,Resilience Healthcare,No
+1152,Mt Sinai Hospital Medical Center (AKA Mount Sinai Hospital),Chicago,IL,"$761,059","$2,422,082",26,1.8%,24,Sinai Chicago (FKA Sinai Health System),No
+1122,OSF Little Company of Mary Medical Center (FKA Little Company of Mary Hospital),Evergreen Park,IL,"$708,375","$1,808,830",20,1.4%,19,OSF HealthCare,No
+1132,Community First Medical Center (FKA Our Lady of the Resurrection Medical Center),Chicago,IL,"$700,816","$2,215,266",27,1.9%,19,,No
+1342,Franciscan Health Dyer (FKA Franciscan St Margaret Health - Dyer Campus),Dyer,IN,"$688,085","$1,903,881",18,1.3%,14,Franciscan Alliance Inc (AKA Franciscan Health),No
+1135,Northwestern Memorial Hospital,Chicago,IL,"$672,381","$1,713,652",36,2.5%,33,Northwestern Medicine (AKA Northwestern Memorial Healthcare),No
+1154,Evanston Hospital (AKA NorthShore Evanston Hospital),Evanston,IL,"$663,920","$1,459,606",17,1.2%,14,Endeavor Health (FKA NorthShore - Edward-Elmhurst Health),No
+1201,Riverside Medical Center (AKA Riverside Healthcare),Kankakee,IL,"$594,983","$1,313,031",19,1.3%,16,,No
+1156,Advocate Trinity Hospital,Chicago,IL,"$585,808","$1,305,388",17,1.2%,16,Advocate Health Care,No
+1141,Holy Cross Hospital,Chicago,IL,"$570,439","$1,421,192",14,1.0%,12,Sinai Chicago (FKA Sinai Health System),No
+1128,Advocate Lutheran General Hospital,Park Ridge,IL,"$553,733","$1,682,664",22,1.5%,20,Advocate Health Care,No
+1133,Northwest Community Hospital (AKA Northwest Community Healthcare),Arlington Heights,IL,"$523,432","$1,313,088",14,1.0%,12,Endeavor Health (FKA NorthShore - Edward-Elmhurst Health),No
+1145,Swedish Hospital (FKA Swedish Covenant Hospital),Chicago,IL,"$489,954","$1,148,707",17,1.2%,11,Endeavor Health (FKA NorthShore - Edward-Elmhurst Health),No
+1177,Elmhurst Hospital,Elmhurst,IL,"$488,858","$1,441,877",16,1.1%,16,Endeavor Health (FKA NorthShore - Edward-Elmhurst Health),No
+1196,Northwestern Medicine Delnor Hospital (FKA Delnor Community Hospital),Geneva,IL,"$481,469","$1,780,344",20,1.4%,19,Northwestern Medicine (AKA Northwestern Memorial Healthcare),No
+1165,Weiss Memorial Hospital (Closed),Chicago,IL,"$469,309","$1,799,780",,,,Resilience Healthcare,No
+1120,Olympia Fields Hospital (FKA Franciscan Health Olympia Fields),Olympia Fields,IL,"$467,116","$1,424,257",12,0.8%,12,Prime Healthcare Services,No
+1140,John H Stroger Jr Hospital of Cook County,Chicago,IL,"$438,015","$1,101,902",12,0.8%,,Cook County Health & Hospitals System,No
+1210,Advocate Good Shepherd Hospital,Barrington,IL,"$433,144","$1,443,356",11,0.8%,,Advocate Health Care,No
+1162,Uchicago Medicine AdventHealth La Grange (FKA AdventHealth La Grange),La Grange,IL,"$401,329","$1,350,110",13,0.9%,13,UChicago Medicine (FKA University of Chicago Medicine),No
+1126,Humboldt Park Health (FKA Norwegian American Hospital),Chicago,IL,"$387,041","$1,152,489",22,1.5%,22,,No
+1129,Ascension Saint Joseph Chicago (FKA AMITA Health Saint Joseph Hospital Chicago),Chicago,IL,"$353,688","$951,816",11,0.8%,11,Ascension Health Illinois,No
+1376,Northwest Health - Porter (AKA Porter Regional Hospital),Valparaiso,IN,"$344,901","$1,177,876",,,,Northwest Health Porter (FKA Porter Health Care System),No
+1136,Loyola University Medical Center,Maywood,IL,"$323,377","$1,123,428",17,1.2%,16,Loyola University Health System (AKA Loyola Medicine),No
+1345,Methodist Hospitals - Northlake,Gary,IN,"$318,282","$1,241,505",,,,Methodist Hospitals,No
+1275,Saint Joseph Medical Center - Joliet (FKA Ascension Saint Joseph Joliet),Joliet,IL,"$317,406","$889,390",14,1.0%,11,Prime Healthcare Services,No
+1207,Advocate Condell Medical Center,Libertyville,IL,"$314,928","$802,978",,,,Advocate Health Care,No
+1341,Franciscan Health Crown Point (FKA Franciscan St Anthony Health - Crown Point),Crown Point,IN,"$298,093","$526,925",12,0.8%,,Franciscan Alliance Inc (AKA Franciscan Health),No
+1147,Resurrection Medical Center (FKA Ascension Resurrection),Chicago,IL,"$290,679","$936,925",13,0.9%,12,Prime Healthcare Services,No
+1144,Insight Hospital & Medical Center Chicago (FKA Mercy Hospital & Medical Center),Chicago,IL,"$276,617","$830,159",12,0.8%,12,Insight,No
+1199,Advocate Sherman Hospital,Elgin,IL,"$236,542","$581,303",,,,Advocate Health Care,No
+1383,Memorial Hospital of South Bend,South Bend,IN,"$233,846","$700,671",,,,Beacon Health System,No
+1183,Morris Hospital & Healthcare Centers,Morris,IL,"$232,603","$505,634",,,,,No
+1344,St Mary Medical Center,Hobart,IN,"$230,701","$620,951",,,,Powers Health (FKA Community Healthcare System),No
+1150,Saint Anthony Hospital,Chicago,IL,"$221,364","$544,048",16,1.1%,13,,No
+1282,OSF Saint Anthony Medical Center,Rockford,IL,"$213,653","$436,543",,,,OSF HealthCare,No
+1178,Uchicago Medicine AdventHealth Hinsdale (FKA AdventHealth Hinsdale),Hinsdale,IL,"$211,792","$568,668",,,,UChicago Medicine (FKA University of Chicago Medicine),No
+1171,Northwestern Medicine Kishwaukee Hospital (FKA Kishwaukee Community Hospital),Dekalb,IL,"$196,270","$1,870,246",14,1.0%,12,Northwestern Medicine (AKA Northwestern Memorial Healthcare),No
+1137,Ascension St Alexius (FKA AMITA Health St Alexius Medical Center Hoffman Estates),Hoffman Estates,IL,"$194,113","$461,986",,,,Ascension Health Illinois,No
+1134,Ascension Alexian Brothers (FKA AMITA Health Alexian Brothers Medical Center Elk Grove Village),Elk Grove Village,IL,"$188,406","$584,015",,,,Ascension Health Illinois,No
+1151,St Bernard Hospital,Chicago,IL,"$173,533","$481,064",,,,,No
+1159,MacNeal Hospital,Berwyn,IL,"$173,484","$430,859",,,,Loyola University Health System (AKA Loyola Medicine),No
+1348,Franciscan Health Michigan City (FKA Franciscan St Anthony Health - Michigan City),Michigan City,IN,"$167,653","$670,872",,,,Franciscan Alliance Inc (AKA Franciscan Health),No
+1276,Uchicago Medicine AdventHealth Bolingbrook (FKA AdventHealth Bolingbrook),Bolingbrook,IL,"$163,266","$445,339",,,,UChicago Medicine (FKA University of Chicago Medicine),No
+1146,Thorek Memorial Hospital,Chicago,IL,"$156,586","$636,432",,,,Thorek Memorial Hospital Health System,No
+1366,St Joseph Health System Plymouth Medical Center (FKA St Josephs Regional Medical Center - Plymouth),Plymouth,IN,"$147,670","$685,815",,,,St Joseph Health System (Mishawaka IN),No
+1164,Saint Francis Hospital (FKA Ascension Saint Francis),Evanston,IL,"$147,611","$429,470",,,,Prime Healthcare Services,No
+1204,Vista Medical Center East (AKA Vista Health System),Waukegan,IL,"$147,433","$602,417",,,,American Healthcare Systems,No
+1216,OSF Saint Katharine Medical Center (FKA Katherine Shaw Bethea Hospital),Dixon,IL,"$145,525","$482,938",,,,OSF HealthCare,No
+1167,Roseland Community Hospital,Chicago,IL,"$136,918","$334,927",,,,,No
+1153,Gottlieb Memorial Hospital,Melrose Park,IL,"$135,396","$289,441",,,,Loyola University Health System (AKA Loyola Medicine),No
+1200,Saint Mary Hospital - Kankakee (FKA Ascension St Mary Kankakee),Kankakee,IL,"$132,306","$541,006",,,,Prime Healthcare Services,No
+2031,Bronson Methodist Hospital,Kalamazoo,MI,"$128,452","$309,911",,,,Bronson Healthcare,No
+1338,Franciscan Health Munster (FKA Franciscan Healthcare - Munster Franciscan Physicians Hospital LLC),Munster,IN,"$118,631","$240,373",,,,Franciscan Alliance Inc (AKA Franciscan Health),No
+1125,Advocate Illinois Masonic Medical Center,Chicago,IL,"$105,371","$257,023",,,,Advocate Health Care,No
+2380,Centerpoint Medical Center,Independence,MO,"$104,673","$107,419",,,,HCA Mid America Division (AKA HCA Midwest Health),No
+1346,St Catherine Hospital,East Chicago,IN,"$92,838","$272,104",,,,Powers Health (FKA Community Healthcare System),No
+1170,Northwestern Medicine Valley West Hospital (FKA Valley West Community Hospital),Sandwich,IL,"$91,885","$682,756",,,,Northwestern Medicine (AKA Northwestern Memorial Healthcare),No
+1124,South Shore Hospital,Chicago,IL,"$90,733","$360,330",,,,,No
+1208,Northwestern Medicine Lake Forest Hospital,Lake Forest,IL,"$89,845","$258,516",,,,Northwestern Medicine (AKA Northwestern Memorial Healthcare),No
+1274,CGH Medical Center,Sterling,IL,"$84,805","$228,252",,,,,No
+1111,Carle Foundation Hospital,Urbana,IL,"$80,149","$180,550",,,,Carle Health System,No
+4534,Aurora St Lukes Medical Center of Aurora Health Care Metro,Milwaukee,WI,"$68,420","$160,220",,,,Aurora Health Care,No
+1206,City of Hope Chicago (FKA Cancer Treatment Centers of America - Chicago),Zion,IL,"$60,245","$56,123",,,,City of Hope,No
+1220,Northwestern Medicine McHenry Hospital (FKA Centegra Hospital - McHenry),McHenry,IL,"$60,241","$205,469",,,,Northwestern Medicine (AKA Northwestern Memorial Healthcare),No
+3618,Novant Health Hilton Head Medical Center (FKA Hilton Head Hospital),Hilton Head Island,SC,"$58,468","$75,506",,,,Hilton Head Regional Healthcare,No
+873,AdventHealth Orlando (FKA Florida Hospital Orlando),Orlando,FL,"$57,446","$171,776",,,,AdventHealth Central Florida Division,No
+1213,OSF Saint Elizabeth Medical Center (FKA Ottawa Regional Hosp & Hc Center),Ottawa,IL,"$46,492","$211,294",,,,OSF HealthCare,No
+1166,The Loretto Hospital,Chicago,IL,"$44,673","$116,820",,,,,No
+1289,Lutheran Hospital,Fort Wayne,IN,"$43,189","$143,372",,,,Lutheran Health Network,No
+173,Banner Thunderbird Medical Center,Glendale,AZ,"$41,527","$41,668",,,,Banner Health,No
+4423,Cabell Huntington Hospital,Huntington,WV,"$40,710","$146,027",,,,Marshall Health Network (FKA Mountain Health Network),No
+1242,OSF Saint Francis Medical Center,Peoria,IL,"$38,964","$68,628",,,,OSF HealthCare,No
+1259,HSHS St Johns Hospital,Springfield,IL,"$38,397","$81,508",,,,Hospital Sisters Health System (AKA HSHS),No
+2589,Valley Hospital Medical Center,Las Vegas,NV,"$37,472","$115,904",,,,The Valley Health System,No
+851,Sylvester Comprehensive Cancer Center,Miami,FL,"$36,731","$109,735",,,,University of Miami Health System (AKA UHealth),No
+841721,Henderson Hospital,Henderson,NV,"$31,262","$123,892",,,,The Valley Health System,No
+1174,Uchicago Medicine AdventHealth GlenOaks (FKA AdventHealth GlenOaks),Glendale Heights,IL,"$31,021","$185,754",,,,UChicago Medicine (FKA University of Chicago Medicine),No
+759,Ascension Sacred Heart Hospital Bay (AKA Bay Medical Sacred Heart),Panama City,FL,"$30,874","$143,114",,,,Ascension Sacred Heart Health System,No
+1339,Pinnacle Hospital,Crown Point,IN,"$25,157","$49,363",,,,,No
+1382,Mishawaka Medical Center (FKA St Joseph Regional Medical Center),Mishawaka,IN,"$24,639","$36,460",,,,St Joseph Health System (Mishawaka IN),No
+920,Sarasota Memorial Hospital,Sarasota,FL,"$24,212","$28,192",,,,Sarasota Memorial Health Care System,No
+2818,Strong Memorial Hospital,Rochester,NY,"$24,199","$54,924",,,,University of Rochester Medical Center (AKA UR Medicine),No
+1138,Provident Hospital of Cook County,Chicago,IL,"$23,481","$56,325",,,,Cook County Health & Hospitals System,No
+4148,Texas Health Fort Worth (FKA Texas Health Harris Methodist Hospital Fort Worth),Fort Worth,TX,"$22,784","$98,273",,,,Texas Health Resources,No
+1211,OSF Saint Paul Medical Center (FKA Mendota Community Hospital),Mendota,IL,"$21,188","$73,513",,,,OSF HealthCare,No
+178,Mayo Clinic Hospital - Arizona,Phoenix,AZ,"$20,533","$76,461",,,,Mayo Clinic,No
+2049,UP Health System - Marquette (FKA Marquette General Hospital),Marquette,MI,"$17,952","$53,272",,,,UP Health System,No
+550099,Sentara Princess Anne Hospital,Virginia Beach,VA,"$15,694","$51,972",,,,Sentara Health (FKA Sentara Healthcare),No
+1278,Deaconess Illinois Medical Center (FKA Heartland Regional Medical Center),Marion,IL,"$15,259","$24,481",,,,Deaconess Health System,No
+1224,Carle BroMenn Medical Center (FKA Advocate BroMenn Medical Center),Normal,IL,"$13,722","$17,247",,,,Carle Health System,No
+4525,Aurora Medical Center - Manitowoc County,Two Rivers,WI,"$12,722","$33,991",,,,Aurora Health Care,No
+4489,Aspirus Divine Savior Hospital (FKA Divine Savior Healthcare),Portage,WI,"$11,508","$11,440",,,,Aspirus Health (FKA Community Health Care Inc),No
+4569,SSM Health St Clare Hospital - Baraboo,Baraboo,WI,"$11,508","$11,440",,,,SSM Health in Wisconsin,No
+2444,SSM Health Saint Louis University Hospital,Saint Louis,MO,"$11,508","$11,440",,,,SSM Health St Louis,No
+3806,Roane Medical Center,Harriman,TN,"$11,068","$61,674",,,,Covenant Health (TN),No
+2427,Christian Hospital,Saint Louis,MO,"$10,809","$49,920",,,,BJC HealthCare,No
+2964,Cape Fear Valley Medical Center,Fayetteville,NC,"$10,253","$38,075",,,,Cape Fear Valley Health System (FKA Cumberland County Hospital System),No
+748,The George Washington University Hospital,Washington,DC,"$10,253","$38,075",,,,Universal Health Services,No
+2591,MountainView Hospital,Las Vegas,NV,"$9,341","$117,188",,,,HCA Far West Division - Sunrise Health,No
+983,Wellstar Douglas Medical Center (AKA Wellstar Douglas Hospital),Douglasville,GA,"$8,919","$39,003",,,,Wellstar Health System,No
+1257,SIH Harrisburg Medical Center,Harrisburg,IL,"$8,826","$19,264",,,,Southern Illinois Healthcare,No
+845,Jackson Memorial Hospital,Miami,FL,"$8,698","$10,177",,,,Jackson Health System (FL),No
+1223,OSF St Joseph Medical Center,Bloomington,IL,"$7,660","$48,751",,,,OSF HealthCare,No
+4016,HCA Houston Healthcare Southeast (FKA Bayshore Medical Center),Pasadena,TX,"$6,918","$38,554",,,,HCA Gulf Coast Division - HCA Houston Healthcare,No
+1121,Jackson Park Hospital & Medical Center,Chicago,IL,"$6,678","$122,178",,,,,No
+1192,SSM Health Good Samaritan Hospital - Mt Vernon (FKA Good Samaritan Regional Health Center),Mount Vernon,IL,$0,"$464,969",,,,SSM Health in Illinois,No
+2385,University Health Truman Medical Center (FKA Truman Medical Center Hospital Hill),Kansas City,MO,$0,"$11,258",,,,University Health (FKA Truman Medical Centers),No
+550013,Seton Medical Center Harker Heights,Harker Heights,TX,$0,"$11,478",,,,Ardent (FKA Ardent Health Services),No
+1119,Thorek Memorial Hospital Andersonville (FKA Methodist Hospital of Chicago),Chicago,IL,$0,"$19,913",,,,Thorek Memorial Hospital Health System,No
+1260,Springfield Memorial Hospital (FKA Memorial Medical Center),Springfield,IL,$0,"$42,935",,,,Memorial Health (FKA Memorial Health System),No

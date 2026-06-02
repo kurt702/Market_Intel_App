@@ -1,0 +1,11 @@
+expected_file_type,raw_tab,required,signature_columns,notes
+MedicalClaims_CPT,Raw_MedicalClaims_CPT,false,,Template row
+Outpatient_CPT,Raw_Outpatient_CPT,false,,Template row
+MedicalClaims_DRG,Raw_MedicalClaims_DRG,false,,Template row
+Inpatient_DRG,Raw_Inpatient_DRG,false,,Template row
+Inpatient_Leakage,Raw_Inpatient_Leakage,false,,Template row
+Outpatient_Leakage,Raw_Outpatient_Leakage,false,,Template row
+Inpatient_MarketShare,Raw_Inpatient_MarketShare,false,,Template row
+ZIP_Origination,Raw_ZIP_Origination,false,,Template row
+Referrals_From,Raw_Referrals_From,false,,Template row
+Referrals_To,Raw_Referrals_To,false,,Template row

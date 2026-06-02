@@ -1,0 +1,11 @@
+drg_code,drg_category,kpi_domain,recommended_use,notes
+242,Core CIED Implant,Device Implant Revenue,Include in core device implant revenue,Permanent cardiac pacemaker implant with MCC
+243,Core CIED Implant,Device Implant Revenue,Include in core device implant revenue,Permanent cardiac pacemaker implant with CC
+244,Core CIED Implant,Device Implant Revenue,Include in core device implant revenue,Permanent cardiac pacemaker implant without CC/MCC
+245,Core CIED Implant / Lifecycle,Device Implant Revenue,Include with caution,AICD generator procedures
+246,Core CIED Implant / Lifecycle,Device Implant Revenue,Include with caution,AICD lead procedures
+247,Broader CV Procedure,Broader CV Procedure,Do not include in pure CIED implant revenue unless clearly labeled,Percutaneous cardiovascular procedure with drug-eluting stent with MCC
+248,Broader CV Procedure,Broader CV Procedure,Do not include in pure CIED implant revenue unless clearly labeled,Percutaneous cardiovascular procedure with drug-eluting stent without MCC
+249,Broader CV Procedure,Broader CV Procedure,Do not include in pure CIED implant revenue unless clearly labeled,Percutaneous cardiovascular procedure with non-drug-eluting stent with MCC
+250,Broader CV Procedure,Broader CV Procedure,Do not include in pure CIED implant revenue unless clearly labeled,Percutaneous cardiovascular procedure with non-drug-eluting stent without MCC
+251,Broader CV Procedure,Broader CV Procedure,Do not include in pure CIED implant revenue unless clearly labeled,Percutaneous cardiovascular procedure without coronary artery stent without MCC
