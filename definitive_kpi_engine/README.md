@@ -1,6 +1,6 @@
 # Definitive KPI Engine
 
-Phase 1 scaffold for an auditable KPI engine for Definitive Healthcare CSV files.
+Phase 1-7 scaffold for an auditable KPI engine for Definitive Healthcare CSV files.
 
 This repository is intentionally not feature-complete yet. Phase 1 establishes the project structure, configuration templates, placeholder package modules, placeholder tests, and a runnable command-line entrypoint.
 
