@@ -1,2 +1,13 @@
-kpi_id,kpi_name,unit,required_source_types,calculation_method,notes
-,,,,,Template row
+kpi_id,kpi_name,domain,required_source_tabs,required_taxonomy_type,required_code_category,required_numeric_fields,notes
+total_ep_charges,Mapped EP/CIED Charges,EP Financial,Raw_MedicalClaims_CPT,CPT,Device Creation;Device Lifecycle;Lead Management,Actual Charges__num,Eligibility only; current value reflects mapped EP/CIED CPT taxonomy only
+device_implant_revenue,Device Implant Revenue,Device Implant Revenue,Raw_MedicalClaims_DRG;Raw_Inpatient_DRG,DRG,Core CIED Implant;Core CIED Implant / Lifecycle,Actual Charges__num;Medicare Total Charges__num,Eligibility only; no KPI value calculated
+device_implant_volume,Device Implant Volume,Device Implant Volume,Raw_MedicalClaims_DRG;Raw_Inpatient_DRG,DRG,Core CIED Implant;Core CIED Implant / Lifecycle,# Actual Claims__num;Medicare Total # of Claims__num,Eligibility only; no KPI value calculated
+device_creation_revenue,Device Creation Revenue,Device Creation,Raw_MedicalClaims_CPT,CPT,Device Creation,Actual Charges__num,Eligibility only; no KPI value calculated
+device_lifecycle_revenue,Device Lifecycle Revenue,Device Lifecycle,Raw_MedicalClaims_CPT,CPT,Device Lifecycle,Actual Charges__num,Eligibility only; no KPI value calculated
+lead_management_revenue,Lead Management Revenue,Lead Management,Raw_MedicalClaims_CPT,CPT,Lead Management,Actual Charges__num,Eligibility only; no KPI value calculated
+ep_leakage_revenue,EP Leakage Revenue,Leakage,Raw_Inpatient_Leakage;Raw_Outpatient_Leakage,DRG,Core CIED Implant;Core CIED Implant / Lifecycle;Broader CV Procedure,Total Charges__num,Eligibility only; no KPI value calculated
+net_referral_balance,Net Referral Balance,Referrals,Raw_Referrals_From;Raw_Referrals_To,,,# of referrals__num,Eligibility only; no KPI value calculated
+geographic_catchment,Geographic Catchment,Geography,Raw_ZIP_Origination,,,Medicare Total # of Cases__num,Eligibility only; no KPI value calculated
+ep_market_share,EP Market Share,Market Position,Raw_Inpatient_MarketShare,DRG,Core CIED Implant;Core CIED Implant / Lifecycle;Broader CV Procedure,Total claims - this hospital__num;Total claims - patient universe__num,Eligibility only; no KPI value calculated
+market_rank,Market Rank,Market Position,Raw_Inpatient_MarketShare,,,Total claims - this hospital__num;Total claims - patient universe__num;% claims at this hospital__num,Eligibility only; no KPI value calculated
+dpci,DPCI,Data Completeness,Raw_MedicalClaims_CPT,CPT,Device Creation;Device Lifecycle,,Eligibility only; no KPI value calculated

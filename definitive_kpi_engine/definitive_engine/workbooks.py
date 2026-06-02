@@ -38,6 +38,12 @@ AUDITOR_SHEET_NAMES = [
     *[sheet_name for sheet_name, _ in RAW_TAB_SHEET_ORDER],
     "16_CPT_Taxonomy_Matches",
     "17_DRG_Taxonomy_Matches",
+    "19_KPI_Eligibility",
+    "20_KPI_Calculation_Detail",
+    "21_CPT_Calculation_Detail",
+    "22_DRG_Calculation_Detail",
+    "23_Referral_Calculation_Detail",
+    "24_Geographic_Catchment_Detail",
 ]
 
 
@@ -50,6 +56,8 @@ def write_auditor_workbook(
     cpt_taxonomy_matches: pd.DataFrame | None = None,
     drg_taxonomy_matches: pd.DataFrame | None = None,
     taxonomy_match_summary: pd.DataFrame | None = None,
+    kpi_eligibility: pd.DataFrame | None = None,
+    calculation_outputs: dict[str, pd.DataFrame] | None = None,
 ) -> Path:
     """Write the Auditor Workbook / source fact book."""
     path = Path(output_path)
@@ -66,6 +74,7 @@ def write_auditor_workbook(
             cpt_taxonomy_matches,
             drg_taxonomy_matches,
             taxonomy_match_summary,
+            kpi_eligibility,
         ).to_excel(writer, sheet_name="04_Data_Quality_Log", index=False)
 
         for sheet_name, raw_tab_name in RAW_TAB_SHEET_ORDER:
@@ -85,6 +94,15 @@ def write_auditor_workbook(
             pd.DataFrame({"note": ["No DRG taxonomy match data generated."]}).to_excel(writer, sheet_name="17_DRG_Taxonomy_Matches", index=False)
         else:
             drg_output.to_excel(writer, sheet_name="17_DRG_Taxonomy_Matches", index=False)
+        if kpi_eligibility is None or kpi_eligibility.empty:
+            pd.DataFrame({"note": ["No KPI eligibility data generated."]}).to_excel(writer, sheet_name="19_KPI_Eligibility", index=False)
+        else:
+            kpi_eligibility.to_excel(writer, sheet_name="19_KPI_Eligibility", index=False)
+        _write_calculation_sheet(writer, calculation_outputs, "kpi_calculation_detail", "20_KPI_Calculation_Detail")
+        _write_calculation_sheet(writer, calculation_outputs, "cpt_calculation_detail", "21_CPT_Calculation_Detail")
+        _write_calculation_sheet(writer, calculation_outputs, "drg_calculation_detail", "22_DRG_Calculation_Detail")
+        _write_calculation_sheet(writer, calculation_outputs, "referral_calculation_detail", "23_Referral_Calculation_Detail")
+        _write_calculation_sheet(writer, calculation_outputs, "geographic_catchment_detail", "24_Geographic_Catchment_Detail")
 
         _format_workbook(writer.book)
 
@@ -106,12 +124,21 @@ def _build_read_me(account_name: str, generation_timestamp: str) -> pd.DataFrame
     return pd.DataFrame(rows)
 
 
+def _write_calculation_sheet(writer, calculation_outputs: dict[str, pd.DataFrame] | None, key: str, sheet_name: str) -> None:
+    df = calculation_outputs.get(key, pd.DataFrame()) if calculation_outputs else pd.DataFrame()
+    if df.empty:
+        pd.DataFrame({"note": [f"No {sheet_name} data generated."]}).to_excel(writer, sheet_name=sheet_name, index=False)
+    else:
+        df.to_excel(writer, sheet_name=sheet_name, index=False)
+
+
 def _build_data_quality_log(
     source_file_inventory: pd.DataFrame,
     raw_tab_dataframes: dict[str, pd.DataFrame],
     cpt_taxonomy_matches: pd.DataFrame | None = None,
     drg_taxonomy_matches: pd.DataFrame | None = None,
     taxonomy_match_summary: pd.DataFrame | None = None,
+    kpi_eligibility: pd.DataFrame | None = None,
 ) -> pd.DataFrame:
     loaded_count = int((source_file_inventory.get("load_status", pd.Series(dtype=str)) == "loaded").sum())
     unknown_count = int((source_file_inventory.get("detected_file_type", pd.Series(dtype=str)) == "unknown").sum())
@@ -160,6 +187,7 @@ def _build_data_quality_log(
             },
     ]
     rows.extend(_taxonomy_quality_rows(cpt_taxonomy_matches, drg_taxonomy_matches, taxonomy_match_summary))
+    rows.extend(_kpi_eligibility_quality_rows(kpi_eligibility))
     return pd.DataFrame(rows, columns=["severity", "check_name", "status", "detail"])
 
 
@@ -206,6 +234,25 @@ def _overall_match_rate(summary: pd.DataFrame, taxonomy_type: str) -> float:
     matched = int(filtered["matched_rows"].sum()) if "matched_rows" in filtered else 0
     denominator = total - no_code
     return round(matched / denominator, 4) if denominator else 0
+
+
+def _kpi_eligibility_quality_rows(kpi_eligibility: pd.DataFrame | None) -> list[dict[str, str]]:
+    df = kpi_eligibility if kpi_eligibility is not None else pd.DataFrame()
+    eligible = _eligibility_count(df, "eligible")
+    caution = _eligibility_count(df, "eligible_with_caution")
+    not_eligible = _eligibility_count(df, "not_eligible")
+    return [
+        {"severity": "info", "check_name": "kpi_eligibility_created", "status": "pass" if not df.empty else "warn", "detail": f"{len(df)} KPI eligibility row(s) created."},
+        {"severity": "info", "check_name": "kpis_eligible_count", "status": "pass", "detail": str(eligible)},
+        {"severity": "info", "check_name": "kpis_caution_count", "status": "pass", "detail": str(caution)},
+        {"severity": "info", "check_name": "kpis_not_eligible_count", "status": "pass", "detail": str(not_eligible)},
+    ]
+
+
+def _eligibility_count(df: pd.DataFrame, status: str) -> int:
+    if df.empty or "eligibility_status" not in df.columns:
+        return 0
+    return int((df["eligibility_status"] == status).sum())
 
 
 def _format_workbook(workbook) -> None:

@@ -19,6 +19,10 @@ def load_taxonomies(config_folder: str | Path) -> tuple[pd.DataFrame, pd.DataFra
     return load_cpt_taxonomy(config_folder), load_drg_taxonomy(config_folder)
 
 
+def load_metric_definitions(config_folder: str | Path) -> pd.DataFrame:
+    return _load_config_csv(Path(config_folder) / "metric_definitions.csv")
+
+
 def _load_config_csv(path: Path) -> pd.DataFrame:
     if not path.exists():
         raise FileNotFoundError(f"Missing config file: {path}")

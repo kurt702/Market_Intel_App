@@ -3,10 +3,13 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-from definitive_engine.config_loader import load_taxonomies
+from definitive_engine.calculations import build_calculation_outputs
+from definitive_engine.config_loader import load_metric_definitions, load_taxonomies
+from definitive_engine.final_outputs import write_final_outputs
 from definitive_engine.ingestion import build_raw_tabs
 from definitive_engine.raw_tabs import build_raw_tab_summary
 from definitive_engine.taxonomy import build_taxonomy_outputs
+from definitive_engine.validation import build_kpi_eligibility
 from definitive_engine.workbooks import write_auditor_workbook
 
 
@@ -48,6 +51,26 @@ def main() -> None:
     else:
         print(taxonomy_match_summary.to_string(index=False))
 
+    metric_definitions = load_metric_definitions(args.config)
+    kpi_eligibility = build_kpi_eligibility(metric_definitions, raw_tabs, cpt_matches, drg_matches)
+
+    print()
+    print("KPI_Eligibility")
+    if kpi_eligibility.empty:
+        print("No KPI eligibility rows generated.")
+    else:
+        print(kpi_eligibility[["kpi_name", "eligibility_status", "confidence_status", "eligibility_notes"]].to_string(index=False))
+
+    calculation_outputs = build_calculation_outputs(kpi_eligibility, raw_tabs, cpt_matches, drg_matches)
+    kpi_calculation_detail = calculation_outputs["kpi_calculation_detail"]
+
+    print()
+    print("KPI_Calculation_Detail")
+    if kpi_calculation_detail.empty:
+        print("No KPI calculation detail rows generated.")
+    else:
+        print(kpi_calculation_detail[["kpi_name", "calculation_status", "calculated_value", "unit", "confidence_status", "validation_notes"]].to_string(index=False))
+
     workbook_path = Path(args.output) / "auditor_workbook.xlsx"
     saved_path = write_auditor_workbook(
         output_path=workbook_path,
@@ -58,9 +81,22 @@ def main() -> None:
         cpt_taxonomy_matches=cpt_matches,
         drg_taxonomy_matches=drg_matches,
         taxonomy_match_summary=taxonomy_match_summary,
+        kpi_eligibility=kpi_eligibility,
+        calculation_outputs=calculation_outputs,
     )
     print()
     print(f"Auditor Workbook saved: {saved_path}")
+
+    final_paths = write_final_outputs(
+        output_folder=args.output,
+        account_name=args.account,
+        reporting_year=str(args.reporting_year or ""),
+        calculation_outputs=calculation_outputs,
+        source_workbook_path=saved_path,
+    )
+    print(f"KPI Workbook saved: {final_paths['kpi_workbook']}")
+    print(f"KPI Summary CSV saved: {final_paths['kpi_summary_csv']}")
+    print(f"KPI Summary JSON saved: {final_paths['kpi_summary_json']}")
 
 
 if __name__ == "__main__":
