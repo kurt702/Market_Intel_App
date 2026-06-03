@@ -1,0 +1,151 @@
+{
+  "account_name": "Rush University Medical Center",
+  "reporting_year": "2024",
+  "generated_at": "2026-06-02T20:53:07+00:00",
+  "kpis": [
+    {
+      "kpi_id": "total_ep_charges",
+      "kpi_name": "Mapped EP/CIED Charges",
+      "domain": "EP Financial",
+      "value": 2477679.0,
+      "formatted_value": "$2.48M",
+      "unit": "dollars",
+      "confidence_status": "yellow",
+      "calculation_status": "calculated_with_caution",
+      "source_summary": "Raw_MedicalClaims_CPT; Rush_medicalclaims_procedure_hcpcscpt_breakdown_2025.csv",
+      "validation_notes": "Current value reflects mapped EP/CIED CPT taxonomy only; not full EP program charges until broader EP CPT taxonomy is added."
+    },
+    {
+      "kpi_id": "device_implant_revenue",
+      "kpi_name": "Device Implant Revenue",
+      "domain": "Device Implant Revenue",
+      "value": 1359183.0,
+      "formatted_value": "$1.36M",
+      "unit": "dollars",
+      "confidence_status": "yellow",
+      "calculation_status": "calculated_with_caution",
+      "source_summary": "Raw_MedicalClaims_DRG; Rush_medicalclaims_drg_2025.csv",
+      "validation_notes": "DRG-based measure, not pure CPT procedural revenue."
+    },
+    {
+      "kpi_id": "device_implant_volume",
+      "kpi_name": "Device Implant Volume",
+      "domain": "Device Implant Volume",
+      "value": 31.0,
+      "formatted_value": "31",
+      "unit": "cases/claims",
+      "confidence_status": "yellow",
+      "calculation_status": "calculated_with_caution",
+      "source_summary": "Raw_MedicalClaims_DRG; Rush_medicalclaims_drg_2025.csv",
+      "validation_notes": "DRG-based volume measure."
+    },
+    {
+      "kpi_id": "device_creation_revenue",
+      "kpi_name": "Device Creation Revenue",
+      "domain": "Device Creation",
+      "value": 1373862.0,
+      "formatted_value": "$1.37M",
+      "unit": "dollars",
+      "confidence_status": "green",
+      "calculation_status": "calculated",
+      "source_summary": "Raw_MedicalClaims_CPT; Rush_medicalclaims_procedure_hcpcscpt_breakdown_2025.csv",
+      "validation_notes": "Device Creation CPT rows summed from matched taxonomy detail."
+    },
+    {
+      "kpi_id": "device_lifecycle_revenue",
+      "kpi_name": "Device Lifecycle Revenue",
+      "domain": "Device Lifecycle",
+      "value": 1049249.0,
+      "formatted_value": "$1.05M",
+      "unit": "dollars",
+      "confidence_status": "green",
+      "calculation_status": "calculated",
+      "source_summary": "Raw_MedicalClaims_CPT; Rush_medicalclaims_procedure_hcpcscpt_breakdown_2025.csv",
+      "validation_notes": "Device Lifecycle CPT rows summed from matched taxonomy detail."
+    },
+    {
+      "kpi_id": "lead_management_revenue",
+      "kpi_name": "Lead Management Revenue",
+      "domain": "Lead Management",
+      "value": 54568.0,
+      "formatted_value": "$54,568",
+      "unit": "dollars",
+      "confidence_status": "green",
+      "calculation_status": "calculated",
+      "source_summary": "Raw_MedicalClaims_CPT; Rush_medicalclaims_procedure_hcpcscpt_breakdown_2025.csv",
+      "validation_notes": "Lead Management CPT rows summed from matched taxonomy detail."
+    },
+    {
+      "kpi_id": "ep_leakage_revenue",
+      "kpi_name": "EP Leakage Revenue",
+      "domain": "Leakage",
+      "value": 6692759.0,
+      "formatted_value": "$6.69M",
+      "unit": "dollars",
+      "confidence_status": "yellow",
+      "calculation_status": "calculated_with_caution",
+      "source_summary": "Raw_Inpatient_Leakage; Rush_Inpatient_Leakage.csv",
+      "validation_notes": "Inpatient DRG-based leakage only; broad outpatient leakage excluded without EP category taxonomy."
+    },
+    {
+      "kpi_id": "net_referral_balance",
+      "kpi_name": "Net Referral Balance",
+      "domain": "Referrals",
+      "value": 263.0,
+      "formatted_value": "263",
+      "unit": "referrals",
+      "confidence_status": "green",
+      "calculation_status": "calculated",
+      "source_summary": "Raw_Referrals_From; Raw_Referrals_To",
+      "validation_notes": "Incoming, outgoing, and net referral detail rows created."
+    },
+    {
+      "kpi_id": "geographic_catchment",
+      "kpi_name": "Geographic Catchment",
+      "domain": "Geography",
+      "value": 10458.0,
+      "formatted_value": "10,458",
+      "unit": "cases",
+      "confidence_status": "green",
+      "calculation_status": "calculated",
+      "source_summary": "Raw_ZIP_Origination",
+      "validation_notes": "Calculated as total cases represented by top 25 ZIPs."
+    },
+    {
+      "kpi_id": "ep_market_share",
+      "kpi_name": "EP Market Share",
+      "domain": "Market Position",
+      "value": 44.34782608695652,
+      "formatted_value": "44.3%",
+      "unit": "percent",
+      "confidence_status": "yellow",
+      "calculation_status": "calculated_with_caution",
+      "source_summary": "Raw_Inpatient_MarketShare",
+      "validation_notes": "EP Market Share calculated from confirmed claims numerator/denominator aggregation."
+    },
+    {
+      "kpi_id": "market_rank",
+      "kpi_name": "Market Rank",
+      "domain": "Market Position",
+      "value": "",
+      "formatted_value": "Not calculated",
+      "unit": "rank",
+      "confidence_status": "yellow",
+      "calculation_status": "not_calculated",
+      "source_summary": "Raw_Inpatient_MarketShare",
+      "validation_notes": "Market rank requires competitor-level market share rows and ranking logic; not calculated in Phase 7A."
+    },
+    {
+      "kpi_id": "dpci",
+      "kpi_name": "DPCI",
+      "domain": "Data Completeness",
+      "value": 2423111.0,
+      "formatted_value": "$2.42M",
+      "unit": "dollars",
+      "confidence_status": "green",
+      "calculation_status": "calculated",
+      "source_summary": "Raw_MedicalClaims_CPT; Rush_medicalclaims_procedure_hcpcscpt_breakdown_2025.csv",
+      "validation_notes": "Claims-based proxy for future device/lead-management burden."
+    }
+  ]
+}
